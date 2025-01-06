@@ -1,0 +1,64 @@
+[versions]
+apacheMime4jCoreVersion = "0.8.11"
+autoCommonVersion = "1.2.2"
+autoServiceVersion = "1.1.1"
+autoValueVersion = "1.11.0"
+commonsIoVersion = "2.18.0"
+coreVersion = "3.5.3"
+daggerVersion = "2.54"
+geocoder = "2.246"
+glideVersion = "4.9.0"
+grpcVersion = "1.11.0"
+guava = "33.4.0-android"
+javapoetVersion = "1.13.0"
+javaxAnnotationApiVersion = "1.3.2"
+protobufJavaVersion = "4.29.2"
+shortcutbadgerVersion = "1.1.22"
+supportCoreUi = "28.0.0"
+volleyVersion = "1.2.1"
+minSdk = "28"
+compileSdk = "35"
+targetSdk = "35"
+java = "17"
+agp = "8.8.0"
+kotlin = "2.1.0"
+protobuf-plugin = "0.9.4"
+
+[libraries]
+apache-mime4j-core = { module = "org.apache.james:apache-mime4j-core", version.ref = "apacheMime4jCoreVersion" }
+apache-mime4j-dom = { module = "org.apache.james:apache-mime4j-dom", version.ref = "apacheMime4jCoreVersion" }
+appcompat-v7 = { module = "com.android.support:appcompat-v7", version.ref = "supportCoreUi" }
+auto-common = { module = "com.google.auto:auto-common", version.ref = "autoCommonVersion" }
+auto-service = { module = "com.google.auto.service:auto-service", version.ref = "autoServiceVersion" }
+auto-service-annotations = { module = "com.google.auto.service:auto-service-annotations", version.ref = "autoServiceVersion" }
+auto-value = { module = "com.google.auto.value:auto-value", version.ref = "autoValueVersion" }
+auto-value-annotations = { module = "com.google.auto.value:auto-value-annotations", version.ref = "autoValueVersion" }
+cardview-v7 = { module = "com.android.support:cardview-v7", version.ref = "supportCoreUi" }
+commons-io = { module = "commons-io:commons-io", version.ref = "commonsIoVersion" }
+glide-compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glideVersion" }
+zxing-core = { module = "com.google.zxing:core", version.ref = "coreVersion" }
+dagger = { module = "com.google.dagger:dagger", version.ref = "daggerVersion" }
+dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "daggerVersion" }
+design = { module = "com.android.support:design", version.ref = "supportCoreUi" }
+geocoder = { module = "com.googlecode.libphonenumber:geocoder", version.ref = "geocoder" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glideVersion" }
+grpc-okhttp = { module = "io.grpc:grpc-okhttp", version.ref = "grpcVersion" }
+grpc-protobuf = { module = "io.grpc:grpc-protobuf", version.ref = "grpcVersion" }
+grpc-stub = { module = "io.grpc:grpc-stub", version.ref = "grpcVersion" }
+guava = { module = "com.google.guava:guava", version.ref = "guava" }
+javapoet = { module = "com.squareup:javapoet", version.ref = "javapoetVersion" }
+javax-annotation-api = { module = "javax.annotation:javax.annotation-api", version.ref = "javaxAnnotationApiVersion" }
+protobuf-java = { module = "com.google.protobuf:protobuf-java", version.ref = "protobufJavaVersion" }
+recyclerview-v7 = { module = "com.android.support:recyclerview-v7", version.ref = "supportCoreUi" }
+shortcutbadger = { module = "me.leolin:ShortcutBadger", version.ref = "shortcutbadgerVersion" }
+support-annotations = { module = "com.android.support:support-annotations", version.ref = "supportCoreUi" }
+support-core-ui = { module = "com.android.support:support-core-ui", version.ref = "supportCoreUi" }
+support-v13 = { module = "com.android.support:support-v13", version.ref = "supportCoreUi" }
+support-v4 = { module = "com.android.support:support-v4", version.ref = "supportCoreUi" }
+volley = { module = "com.android.volley:volley", version.ref = "volleyVersion" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+protobuf = { id = "com.google.protobuf", version.ref = "protobuf-plugin" }
