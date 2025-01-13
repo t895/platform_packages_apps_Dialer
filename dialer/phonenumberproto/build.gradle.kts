@@ -25,12 +25,29 @@ android {
     }
 }
 
+protobuf {
+    protoc {
+        artifact = libs.versions.protoc.artifact.get()
+    }
+    generateProtoTasks {
+        all().forEach { task ->
+            task.builtins {
+                create("java") {
+                    option("lite")
+                }
+            }
+        }
+    }
+}
+
 dependencies {
     implementation(libs.support.v4)
 
     implementation(libs.guava)
 
     implementation(libs.geocoder)
+
+    implementation(libs.protobuf.java)
 
     implementation(project(":dialer:common"))
 }

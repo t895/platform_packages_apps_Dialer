@@ -19,4 +19,16 @@ android {
 }
 
 dependencies {
+    implementation(libs.support.v4)
+
+    implementation(libs.protobuf.java)
+
+    implementation(project(":dialer:common"))
+    implementation(project(":dialer:configprovider"))
+    implementation(project(":dialer:glidephotomanager"))
+    implementation(project(":dialer:lettertile"))
+    implementation(project(":dialer:util"))
+    implementation(project(":dialer:widget"))
+
+    implementation(project(":incallui:incall:protocol"))
 }

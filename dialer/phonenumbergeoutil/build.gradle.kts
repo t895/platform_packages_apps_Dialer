@@ -25,5 +25,5 @@ dependencies {
 
     implementation(project(":dialer:common"))
     implementation(project(":dialer:inject"))
-    implementation(project(":dialer:i8n"))
+    implementation(project(":dialer:i18n"))
 }

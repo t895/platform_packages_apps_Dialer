@@ -19,4 +19,10 @@ android {
 }
 
 dependencies {
+    implementation(libs.support.v4)
+
+    implementation(project(":dialer:common"))
+    implementation(project(":dialer:lettertile"))
+    implementation(project(":dialer:util"))
+    implementation(project(":dialer:constants"))
 }

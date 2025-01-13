@@ -25,7 +25,7 @@ dependencies {
 
     implementation(project(":dialer:common"))
     implementation(project(":dialer:compat"))
-    implementation(project(":dialer:i8n"))
+    implementation(project(":dialer:i18n"))
     implementation(project(":dialer:oem"))
     implementation(project(":dialer:phonenumbergeoutil"))
     implementation(project(":dialer:telecom"))

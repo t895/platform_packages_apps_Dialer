@@ -31,4 +31,8 @@ dependencies {
     implementation(project(":dialer:calllogutils"))
     implementation(project(":dialer:util"))
     implementation(project(":dialer:theme:common"))
+    implementation(project(":dialer:contacts:displaypreference"))
+    implementation(project(":dialer:callcomposer"))
+
+    implementation(project(":incallui"))
 }

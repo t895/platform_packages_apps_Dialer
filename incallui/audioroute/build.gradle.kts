@@ -19,4 +19,12 @@ android {
 }
 
 dependencies {
+    implementation(libs.support.v4)
+    implementation(libs.design)
+
+    implementation(project(":dialer:common"))
+    implementation(project(":dialer:logging"))
+    implementation(project(":dialer:theme:base"))
+
+    implementation(project(":incallui:call"))
 }

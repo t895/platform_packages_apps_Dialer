@@ -30,9 +30,17 @@ dependencies {
 
     implementation(libs.dagger)
 
+    implementation(libs.protobuf.java)
+
+    implementation(project(":dialer:common"))
     implementation(project(":dialer:inject"))
     implementation(project(":dialer:configprovider"))
     implementation(project(":dialer:notification"))
     implementation(project(":dialer:theme:base"))
+    implementation(project(":dialer:theme:common"))
     implementation(project(":dialer:storage"))
+    implementation(project(":dialer:phonenumberproto"))
+    implementation(project(":dialer:logging"))
+
+    implementation(project(":quantum"))
 }

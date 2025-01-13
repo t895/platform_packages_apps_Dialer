@@ -19,4 +19,12 @@ android {
 }
 
 dependencies {
+    implementation(libs.support.v4)
+
+    implementation(project(":dialer:common"))
+
+    implementation(project(":incallui:incall:protocol"))
+    implementation(project(":incallui:commontheme"))
+
+    implementation(project(":quantum"))
 }

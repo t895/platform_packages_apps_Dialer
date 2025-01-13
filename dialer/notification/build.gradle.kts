@@ -22,6 +22,9 @@ dependencies {
     implementation(libs.support.annotations)
     implementation(libs.support.v4)
 
+    implementation(libs.protobuf.java)
+
     implementation(project(":dialer:common"))
     implementation(project(":dialer:logging"))
+    implementation(project(":dialer:util"))
 }

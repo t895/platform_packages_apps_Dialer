@@ -19,4 +19,26 @@ android {
 }
 
 dependencies {
+    implementation(libs.support.v4)
+    implementation(libs.design)
+
+    implementation(libs.guava)
+
+    implementation(project(":contacts-common"))
+
+    implementation(project(":dialer:animation"))
+    implementation(project(":dialer:callintent"))
+    implementation(project(":dialer:location"))
+    implementation(project(":dialer:logging"))
+    implementation(project(":dialer:oem"))
+    implementation(project(":dialer:performancereport"))
+    implementation(project(":dialer:phonenumberutil"))
+    implementation(project(":dialer:precall"))
+    implementation(project(":dialer:proguard"))
+    implementation(project(":dialer:telecom"))
+    implementation(project(":dialer:util"))
+    implementation(project(":dialer:common"))
+    implementation(project(":dialer:i18n"))
+    implementation(project(":dialer:widget"))
+    implementation(project(":dialer:dialpadview:theme"))
 }

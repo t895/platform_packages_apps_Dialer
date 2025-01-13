@@ -23,6 +23,7 @@ java = "17"
 agp = "8.8.0"
 kotlin = "2.1.0"
 protobuf-plugin = "0.9.4"
+protoc-artifact = "com.google.protobuf:protoc:4.29.2"
 
 [libraries]
 apache-mime4j-core = { module = "org.apache.james:apache-mime4j-core", version.ref = "apacheMime4jCoreVersion" }

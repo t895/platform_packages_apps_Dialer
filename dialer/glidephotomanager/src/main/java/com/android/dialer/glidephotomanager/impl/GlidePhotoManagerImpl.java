@@ -28,16 +28,20 @@ import android.telecom.TelecomManager;
 import android.text.TextUtils;
 import android.widget.ImageView;
 import android.widget.QuickContactBadge;
+
 import com.android.dialer.common.Assert;
 import com.android.dialer.glide.GlideApp;
 import com.android.dialer.glide.GlideRequest;
 import com.android.dialer.glide.GlideRequests;
 import com.android.dialer.glidephotomanager.GlidePhotoManager;
 import com.android.dialer.glidephotomanager.PhotoInfo;
+import com.android.dialer.glidephotomanager.R;
 import com.android.dialer.i18n.DialerBidiFormatter;
 import com.android.dialer.inject.ApplicationContext;
 import com.android.dialer.lettertile.LetterTileDrawable;
+
 import java.util.List;
+
 import javax.inject.Inject;
 
 /** Implementation of {@link GlidePhotoManager} */

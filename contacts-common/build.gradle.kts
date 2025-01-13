@@ -3,7 +3,7 @@ import com.google.protobuf.gradle.proto
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
-    id("com.google.protobuf")
+    alias(libs.plugins.protobuf)
 }
 
 java {
@@ -25,15 +25,40 @@ android {
     }
 }
 
+protobuf {
+    protoc {
+        artifact = libs.versions.protoc.artifact.get()
+    }
+    generateProtoTasks {
+        all().forEach { task ->
+            task.builtins {
+                create("java") {
+                    option("lite")
+                }
+            }
+        }
+    }
+}
+
 dependencies {
     implementation(libs.support.v4)
 
     implementation(libs.guava)
 
+    implementation(libs.protobuf.java)
+
+    implementation(libs.geocoder)
+
+    implementation(project(":dialer:common"))
     implementation(project(":dialer:util"))
     implementation(project(":dialer:phonenumberutil"))
     implementation(project(":dialer:telecom"))
     implementation(project(":dialer:location"))
     implementation(project(":dialer:protos"))
     implementation(project(":dialer:contacts:resources"))
+    implementation(project(":dialer:callintent"))
+    implementation(project(":dialer:contactphoto"))
+    implementation(project(":dialer:lettertile"))
+    implementation(project(":dialer:animation"))
+    implementation(project(":dialer:precall"))
 }

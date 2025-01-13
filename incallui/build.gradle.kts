@@ -19,6 +19,9 @@ android {
 }
 
 dependencies {
+    implementation(project(":dialer:dialpadview"))
+
     implementation(project(":incallui:audioroute"))
     implementation(project(":incallui:hold"))
+    implementation(project(":incallui:theme"))
 }

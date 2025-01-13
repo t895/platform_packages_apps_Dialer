@@ -25,5 +25,21 @@ android {
     }
 }
 
+protobuf {
+    protoc {
+        artifact = libs.versions.protoc.artifact.get()
+    }
+    generateProtoTasks {
+        all().forEach { task ->
+            task.builtins {
+                create("java") {
+                    option("lite")
+                }
+            }
+        }
+    }
+}
+
 dependencies {
+    implementation(libs.protobuf.java)
 }

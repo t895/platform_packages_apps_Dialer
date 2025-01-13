@@ -19,4 +19,9 @@ android {
 }
 
 dependencies {
+    implementation(libs.support.annotations)
+
+    implementation(libs.dagger)
+
+    implementation(project(":dialer:inject"))
 }

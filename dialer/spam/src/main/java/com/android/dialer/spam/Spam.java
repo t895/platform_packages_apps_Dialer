@@ -20,10 +20,11 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.CallLog.Calls;
 import android.support.annotation.Nullable;
-import com.android.dialer.DialerPhoneNumber;
+
 import com.android.dialer.logging.ContactLookupResult;
 import com.android.dialer.logging.ContactSource;
 import com.android.dialer.logging.ReportingLocation;
+import com.android.dialer.phonenumberproto.DialerPhoneNumber;
 import com.android.dialer.spam.status.SpamStatus;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableSet;

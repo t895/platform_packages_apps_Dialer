@@ -19,4 +19,14 @@ android {
 }
 
 dependencies {
+    implementation(libs.support.v4)
+    implementation(libs.design)
+
+    implementation(libs.protobuf.java)
+
+    implementation(project(":dialer:common"))
+    implementation(project(":dialer:util"))
+    implementation(project(":dialer:i18n"))
+    implementation(project(":dialer:glidephotomanager"))
+    implementation(project(":dialer:theme:base"))
 }

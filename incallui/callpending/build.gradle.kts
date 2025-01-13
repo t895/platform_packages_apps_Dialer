@@ -19,4 +19,13 @@ android {
 }
 
 dependencies {
+    implementation(libs.support.v4)
+
+    implementation(project(":dialer:common"))
+    implementation(project(":dialer:enrichedcall"))
+    implementation(project(":dialer:multimedia"))
+
+    implementation(project(":incallui:audiomode"))
+    implementation(project(":incallui:call"))
+    implementation(project(":incallui:incall"))
 }

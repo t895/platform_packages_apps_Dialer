@@ -19,4 +19,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.support.v4)
+
+    implementation(project(":incallui:videosurface"))
 }

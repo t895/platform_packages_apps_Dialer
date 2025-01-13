@@ -19,4 +19,11 @@ android {
 }
 
 dependencies {
+    implementation(libs.support.annotations)
+
+    implementation(project(":dialer:common"))
+
+    implementation(project(":product"))
+
+    implementation(project(":quantum"))
 }

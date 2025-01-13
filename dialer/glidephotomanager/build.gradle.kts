@@ -25,5 +25,33 @@ android {
     }
 }
 
+protobuf {
+    protoc {
+        artifact = libs.versions.protoc.artifact.get()
+    }
+    generateProtoTasks {
+        all().forEach { task ->
+            task.builtins {
+                create("java") {
+                    option("lite")
+                }
+            }
+        }
+    }
+}
+
 dependencies {
+    implementation(libs.support.annotations)
+
+    implementation(libs.protobuf.java)
+
+    implementation(libs.dagger)
+
+    implementation(libs.glide)
+
+    implementation(project(":dialer:common"))
+    implementation(project(":dialer:glide"))
+    implementation(project(":dialer:i18n"))
+    implementation(project(":dialer:inject"))
+    implementation(project(":dialer:lettertile"))
 }

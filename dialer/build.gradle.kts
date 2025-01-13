@@ -92,7 +92,7 @@ android {
 
 protobuf {
     protoc {
-        artifact = "com.google.protobuf:protoc:4.29.2"
+        artifact = libs.versions.protoc.artifact.get()
     }
     generateProtoTasks {
         all().forEach { task ->

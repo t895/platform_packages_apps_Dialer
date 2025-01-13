@@ -19,4 +19,12 @@ android {
 }
 
 dependencies {
+    implementation(libs.support.annotations)
+
+    implementation(libs.guava)
+
+    implementation(libs.dagger)
+
+    implementation(project(":dialer:common"))
+    implementation(project(":dialer:inject"))
 }

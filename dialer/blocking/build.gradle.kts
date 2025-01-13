@@ -21,4 +21,6 @@ android {
 dependencies {
     implementation(project(":dialer:common"))
     implementation(project(":dialer:database"))
+
+    implementation(project(":quantum"))
 }
