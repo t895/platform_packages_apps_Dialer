@@ -376,7 +376,7 @@ public class CallSubjectDialog extends Activity {
           getResources().getColor(R.color.call_subject_limit_exceeded));
     } else {
       mCharacterLimitView.setTextColor(
-          getResources().getColor(R.color.dialer_secondary_text_color));
+          getResources().getColor(com.android.dialer.theme.base.R.color.dialer_secondary_text_color));
     }
   }
 

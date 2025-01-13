@@ -38,7 +38,6 @@ dependencies {
     implementation(project(":dialer:callintent"))
     implementation(project(":dialer:configprovider"))
     implementation(project(":dialer:contactphoto"))
-    implementation(project(":dialer:dialercontact"))
     implementation(project(":dialer:enrichedcall"))
     implementation(project(":dialer:multimedia"))
     implementation(project(":dialer:precall"))
@@ -48,4 +47,6 @@ dependencies {
     implementation(project(":dialer:widget"))
 
     implementation(project(":incallui:callpending"))
+
+    implementation(project(":proto"))
 }

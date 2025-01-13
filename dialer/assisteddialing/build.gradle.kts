@@ -34,4 +34,6 @@ dependencies {
     implementation(project(":dialer:function"))
     implementation(project(":dialer:logging"))
     implementation(project(":dialer:phonenumberutil"))
+
+    implementation(project(":proto"))
 }

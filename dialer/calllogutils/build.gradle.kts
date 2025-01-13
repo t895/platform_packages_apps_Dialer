@@ -22,4 +22,7 @@ dependencies {
     implementation(libs.guava)
 
     implementation(project(":dialer:spam"))
+    implementation(project(":dialer:calllog"))
+    implementation(project(":dialer:duo"))
+    implementation(project(":dialer:time"))
 }

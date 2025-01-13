@@ -27,6 +27,12 @@
         android:name=".config.CallLogConfigImpl$PollingJob"
         android:permission="android.permission.BIND_JOB_SERVICE"/>
 
+    <provider
+        android:authorities="com.android.dialer.annotatedcalllog"
+        android:exported="false"
+        android:multiprocess="false"
+        android:name=".database.AnnotatedCallLogContentProvider"/>
+
   </application>
 
 </manifest>

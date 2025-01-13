@@ -21,7 +21,7 @@ android {
     }
 
     sourceSets.getByName("main") {
-        proto { srcDir("./src") }
+        proto { srcDir("./src/main/java") }
     }
 }
 
@@ -47,7 +47,14 @@ dependencies {
 
     implementation(libs.dagger)
 
+    compileOnly(libs.auto.value.annotations)
+    annotationProcessor(libs.auto.value)
+
+    implementation(project(":dialer:common"))
     implementation(project(":dialer:inject"))
-    implementation(project(":dialer:calldetails"))
     implementation(project(":dialer:multimedia"))
+
+    implementation(project(":incallui:videotech"))
+
+    implementation(project(":proto"))
 }

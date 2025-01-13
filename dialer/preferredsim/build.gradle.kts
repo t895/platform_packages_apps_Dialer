@@ -19,4 +19,24 @@ android {
 }
 
 dependencies {
+    implementation(libs.support.annotations)
+
+    implementation(libs.dagger)
+
+    implementation(libs.guava)
+
+    compileOnly(libs.auto.value.annotations)
+    annotationProcessor(libs.auto.value)
+
+    implementation(project(":contacts-common"))
+
+    implementation(project(":dialer:common"))
+    implementation(project(":dialer:configprovider"))
+    implementation(project(":dialer:inject"))
+    implementation(project(":dialer:preferredsim:impl"))
+    implementation(project(":dialer:preferredsim:suggestion"))
+    implementation(project(":dialer:logging"))
+    implementation(project(":dialer:constants"))
+
+    implementation(project(":proto"))
 }

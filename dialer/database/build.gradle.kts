@@ -23,9 +23,12 @@ dependencies {
 
     implementation(libs.guava)
 
-    implementation(project(":dialer:common"))
-    implementation(project(":dialer:configprovider"))
-    implementation(project(":dialer:util"))
     implementation(project(":contacts-common"))
+
+    implementation(project(":dialer:common"))
+    implementation(project(":dialer:constants"))
+    implementation(project(":dialer:configprovider"))
     implementation(project(":dialer:contacts:resources"))
+    implementation(project(":dialer:smartdial:util"))
+    implementation(project(":dialer:util"))
 }

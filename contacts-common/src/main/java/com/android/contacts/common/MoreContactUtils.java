@@ -96,14 +96,14 @@ public class MoreContactUtils {
       // do a full parse of the numbers
       final PhoneNumberUtil.MatchType result = util.isNumberMatch(dataPart1, dataPart2);
       switch (result) {
-        case MatchType.NOT_A_NUMBER:
+        case NOT_A_NUMBER:
           // don't understand the numbers? let's play it safe
           return false;
-        case MatchType.NO_MATCH:
+        case NO_MATCH:
           return false;
-        case MatchType.EXACT_MATCH:
+        case EXACT_MATCH:
           break;
-        case MatchType.NSN_MATCH:
+        case NSN_MATCH:
           try {
             // For NANP phone numbers, match when one has +1 and the other does not.
             // In this case, prefer the +1 version.
@@ -165,7 +165,7 @@ public class MoreContactUtils {
             }
           }
           return false;
-        case MatchType.SHORT_NSN_MATCH:
+        case SHORT_NSN_MATCH:
           return false;
         default:
           throw new IllegalStateException("Unknown result value from phone number " + "library");

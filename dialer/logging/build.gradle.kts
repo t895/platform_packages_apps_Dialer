@@ -21,7 +21,7 @@ android {
     }
 
     sourceSets.getByName("main") {
-        proto { srcDir("./src") }
+        proto { srcDir("./src/main/java") }
     }
 }
 
@@ -45,4 +45,6 @@ dependencies {
     annotationProcessor(libs.auto.value)
 
     implementation(libs.protobuf.java)
+
+    implementation(project(":proto"))
 }

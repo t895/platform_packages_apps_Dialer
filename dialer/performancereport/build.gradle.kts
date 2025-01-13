@@ -26,4 +26,6 @@ dependencies {
 
     implementation(project(":dialer:logging"))
     implementation(project(":dialer:common"))
+
+    implementation(project(":proto"))
 }

@@ -21,7 +21,7 @@ android {
     }
 
     sourceSets.getByName("main") {
-        proto { srcDir("./src") }
+        proto { srcDir("./src/main/java") }
     }
 }
 
@@ -41,5 +41,13 @@ protobuf {
 }
 
 dependencies {
+    implementation(libs.support.annotations)
+
     implementation(libs.protobuf.java)
+
+    implementation(libs.guava)
+
+    implementation(project(":dialer:common"))
+
+    implementation(project(":proto"))
 }

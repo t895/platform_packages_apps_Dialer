@@ -22,7 +22,7 @@ dependencies {
     implementation(libs.support.v4)
 
     implementation(project(":dialer:blockreportspam"))
-    implementation(project(":dialer:calllog:config"))
+    implementation(project(":dialer:calllog"))
     implementation(project(":dialer:common"))
     implementation(project(":dialer:interactions"))
     implementation(project(":dialer:util"))

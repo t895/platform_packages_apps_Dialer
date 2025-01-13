@@ -32,4 +32,6 @@ dependencies {
     implementation(project(":dialer:configprovider"))
 
     implementation(project(":incallui:video:protocol"))
+
+    implementation(project(":proto"))
 }

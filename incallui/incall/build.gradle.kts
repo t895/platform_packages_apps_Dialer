@@ -32,8 +32,10 @@ dependencies {
     implementation(project(":dialer:preferredsim:suggestion"))
     implementation(project(":dialer:assisteddialing"))
 
+    implementation(project(":incallui:autoresizetext"))
     implementation(project(":incallui:audioroute"))
     implementation(project(":incallui:contactgrid"))
     implementation(project(":incallui:call"))
+    implementation(project(":incallui:commontheme"))
     implementation(project(":incallui:videotech"))
 }

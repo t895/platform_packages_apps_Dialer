@@ -19,4 +19,13 @@ android {
 }
 
 dependencies {
+    implementation(libs.support.v4)
+
+    implementation(libs.guava)
+
+    implementation(project(":dialer:common"))
+    implementation(project(":dialer:dialpadview"))
+    implementation(project(":dialer:i18n"))
+    implementation(project(":dialer:database"))
+    implementation(project(":dialer:util"))
 }

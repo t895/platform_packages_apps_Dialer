@@ -29,4 +29,6 @@ dependencies {
     implementation(project(":dialer:i18n"))
     implementation(project(":dialer:glidephotomanager"))
     implementation(project(":dialer:theme:base"))
+
+    implementation(project(":proto"))
 }

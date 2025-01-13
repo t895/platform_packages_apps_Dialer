@@ -19,8 +19,31 @@ android {
 }
 
 dependencies {
+    implementation(libs.support.v4)
+    implementation(libs.design)
+
+    implementation(libs.guava)
+
+    implementation(libs.protobuf.java)
+
+    implementation(project(":contacts-common"))
+
     implementation(project(":dialer:common"))
+    implementation(project(":dialer:configprovider"))
+    implementation(project(":dialer:database:calllogqueryhandler"))
+    implementation(project(":dialer:strictmode"))
+    implementation(project(":dialer:telecom"))
+    implementation(project(":dialer:theme:common"))
     implementation(project(":dialer:database"))
+    implementation(project(":dialer:logging"))
+    implementation(project(":dialer:function"))
+    implementation(project(":dialer:location"))
+    implementation(project(":dialer:notification"))
+    implementation(project(":dialer:storage"))
+    implementation(project(":dialer:voicemailstatus:visualvoicemailenabledchecker"))
+    implementation(project(":dialer:util"))
 
     implementation(project(":quantum"))
+
+    implementation(project(":proto"))
 }

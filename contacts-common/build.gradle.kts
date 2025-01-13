@@ -21,7 +21,7 @@ android {
     }
 
     sourceSets.getByName("main") {
-        proto { srcDir("./src") }
+        proto { srcDir("./src/main/java") }
     }
 }
 
@@ -55,10 +55,18 @@ dependencies {
     implementation(project(":dialer:telecom"))
     implementation(project(":dialer:location"))
     implementation(project(":dialer:protos"))
+    implementation(project(":dialer:contacts:displaypreference"))
     implementation(project(":dialer:contacts:resources"))
     implementation(project(":dialer:callintent"))
     implementation(project(":dialer:contactphoto"))
     implementation(project(":dialer:lettertile"))
     implementation(project(":dialer:animation"))
     implementation(project(":dialer:precall"))
+    implementation(project(":dialer:widget"))
+    implementation(project(":dialer:contacts"))
+    implementation(project(":dialer:theme:base"))
+
+    implementation(project(":proto"))
+
+    implementation(project(":quantum"))
 }

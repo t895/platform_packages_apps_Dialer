@@ -21,7 +21,7 @@ android {
     }
 
     sourceSets.getByName("main") {
-        proto { srcDir("./src") }
+        proto { srcDir("./src/main/java") }
     }
 }
 
@@ -54,4 +54,6 @@ dependencies {
     implementation(project(":dialer:i18n"))
     implementation(project(":dialer:inject"))
     implementation(project(":dialer:lettertile"))
+
+    implementation(project(":proto"))
 }
