@@ -54,5 +54,5 @@ dependencies {
     implementation(project(":dialer:resources"))
     implementation(project(":bubble"))
 
-    implementation(project(":lib:platform_frameworks_ex:common"))
+//    implementation(project(":lib:platform_frameworks_ex:common"))
 }

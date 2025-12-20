@@ -45,5 +45,5 @@ dependencies {
     implementation(project(":protos"))
     implementation(project(":dialer:resources"))
 
-    implementation(project(":lib:platform_frameworks_ex:common"))
+//    implementation(project(":lib:platform_frameworks_ex:common"))
 }

@@ -121,7 +121,7 @@ dependencies {
     implementation(libs.javapoet)
 
     implementation(project(":lib:libbackup"))
-    implementation(project(":lib:platform_frameworks_ex:common"))
+//    implementation(project(":lib:platform_frameworks_ex:common"))
 
     implementation(project(":dialer:common"))
     implementation(project(":dialer:resources"))
